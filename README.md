@@ -94,15 +94,6 @@ src/
 
 ---
 
-## How to Run
-
-Create a virtual environment and install dependencies:
-
-```
-pip install -r requirements.txt
-python src/main.py
-```
-
 ### Requirements
 
 - numpy
