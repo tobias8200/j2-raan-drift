@@ -91,6 +91,19 @@ src/
  ├── analysis.py        # Validation & diagnostics
  └── main.py            # Simulation entry point
 ```
+## How to Run
+
+Clone the repository and install the required dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+From the repository root, execute:
+
+```
+python src/main.py
+```
 
 ### Requirements
 
