@@ -1,4 +1,6 @@
 import numpy as np
+from constants import MU, R_EARTH, J2
+
 
 def kepler_acceleration(r):
     r_norm = np.linalg.norm(r)
@@ -19,7 +21,7 @@ def j2_acceleration(r):
     return np.array([ax, ay, az])
 
 
-def total_acceleration(r, v, t):
+def total_acceleration(r):
     return kepler_acceleration(r) + j2_acceleration(r)
 
 
@@ -27,6 +29,6 @@ def state_derivative(t, y):
     r = y[:3]
     v = y[3:]
 
-    a = total_acceleration(r, v, t)
+    a = total_acceleration(r)
 
     return np.concatenate((v, a))
