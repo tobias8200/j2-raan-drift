@@ -93,18 +93,24 @@ src/
 ```
 ## How to Run
 
-Clone the repository and install the required dependencies:
+Clone the repository:
+
+```
+git clone https://github.com/tobias8200/j2-raan-drift.git
+cd j2-raan-drift
+```
+
+Install dependencies:
 
 ```
 pip install -r requirements.txt
 ```
 
-From the repository root, execute:
+Run the simulation:
 
 ```
-python src/main.py
+python -m src.main
 ```
-
 ### Requirements
 
 - numpy
