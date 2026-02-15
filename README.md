@@ -92,8 +92,6 @@ src/
  └── main.py            # Simulation entry point
 ```
 
----
-
 ### Requirements
 
 - numpy
